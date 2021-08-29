@@ -73,7 +73,7 @@
 export default {
   data() {
     return {
-      partType: 3,
+      partType: 1,
       scene3TextPart1: `When the earth was still young, there were ten suns in the sky. It was extremely hot all the time and there was no such thing as night. The extreme heat made it hard to farm crops and endangered entire populations.`,
       scene3TextPart2: `One day, a skilled archer named Hou Yi decided that enough was enough. He raised his bow to the heavens and shot down nine of the ten suns. To reward him for his heroic deeds, the goddess Xiwangmu gave him an elixir of immortality, a prize typically reserved for immortals who had achieved enlightenment.`,
       scene3TextPart3: `Hou Yi take the exilir and …`,
