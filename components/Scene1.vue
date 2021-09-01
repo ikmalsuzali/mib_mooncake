@@ -1,5 +1,5 @@
 <template>
-  <div class="overlay grid bg-blue-600">
+  <div class="overlay grid bg-picture">
     <div class="m-auto text-9xl">Chang'E Myth</div>
     <div class="m-auto">
       <button
@@ -16,4 +16,10 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.bg-picture {
+  background: url(~/assets/images/mooncake_scene_2.jpeg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+</style>

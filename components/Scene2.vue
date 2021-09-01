@@ -1,6 +1,5 @@
 <template>
   <div class="overlay grid bg-picture">
-    <div class="m-auto text-9xl">Scene 2</div>
     <div class="fixed bottom-0 w-full bg-gray-800 bg-opacity-50">
       <div class="container mx-auto px-5 lg:px-40 py-8">
         <div class="grid text-white">
@@ -42,7 +41,7 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_2.png) no-repeat center center;
+  background: url(~/assets/images/mooncake_scene_2.jpeg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
