@@ -11,7 +11,7 @@
       <div class="container mx-auto px-5 lg:px-20 py-8">
         <div class="grid text-white">
           <div class="flex-col">
-            <div>What does Hau Yi do then?</div>
+            <div>What does Hou Yi do then?</div>
             <button
               :class="animated1 ? 'shake bg-red-400' : 'bg-transparent'"
               class="

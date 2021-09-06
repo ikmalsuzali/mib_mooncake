@@ -2,7 +2,7 @@
   <div class="overlay grid bg-picture">
     <div class="mx-auto lg:px-10 py-8">
       <div class="grid text-white">
-        <div class="text-xs lg:text-2xl p-4 bg-gray-200 bg-opacity-20">
+        <div class="text-xs md:text-2xl p-4 bg-gray-200 bg-opacity-20">
           {{ scene3TextPart1 }}
         </div>
       </div>

@@ -10,10 +10,6 @@
     <div class="fixed bottom-0 w-full bg-opacity-70">
       <div class="container mx-auto px-5 lg:px-40 py-8">
         <div class="grid text-white">
-          <div>
-            *this story is based on a chinese myth with many different
-            renditions
-          </div>
           <div class="flex">
             <button
               class="
@@ -28,10 +24,10 @@
                 rounded-xl
                 text-black
               "
-              @click="$emit('next', 1)"
+              @click="$emit('next', 9)"
             >
               <div class="blink">
-                <span>Restart the story</span>
+                <span>Next</span>
               </div>
             </button>
           </div>
