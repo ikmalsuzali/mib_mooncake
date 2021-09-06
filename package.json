@@ -13,7 +13,10 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "file-loader": "^6.2.0",
+    "nuxt": "^2.15.3",
+    "vue2-animate": "^2.1.4",
+    "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",

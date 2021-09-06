@@ -1,10 +1,9 @@
 @font-face {
   font-family: "MinionPro";
-  src: local("MinionPro-Medium"),
-    url(~assets/minion-pro/MinionPro-Medium.otf) format("opentype");
+  src: url(~assets/fonts/MinionPro-Medium.otf) format("opentype");
 }
 
-html {
+* {
   font-family: "MinionPro";
 }
 

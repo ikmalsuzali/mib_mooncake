@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/DMSans-Regular.ttf') format('truetype');
+}
+
+.blink {
+  /* background-color: magenta; */
+  text-align: center;
+}
+
+span {
+  color: white;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

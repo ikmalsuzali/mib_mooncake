@@ -1,6 +1,6 @@
 <template>
   <div class="overlay grid bg-picture">
-    <div class="fixed bottom-0 w-full bg-gray-800 bg-opacity-50">
+    <div class="fixed bottom-0 w-full bg-opacity-50">
       <div class="container mx-auto px-5 lg:px-40 py-8">
         <div class="grid text-white">
           <div class="text-md lg:text-2xl pb-4">
@@ -41,5 +41,26 @@ export default {
   background: url(~/assets/images/mooncake_scene_8.jpeg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+.blink {
+  /* background-color: magenta; */
+  text-align: center;
+}
+span {
+  color: white;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

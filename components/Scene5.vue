@@ -27,7 +27,9 @@
 </template>
 
 <script>
+import sound from '../mixins/sound.js'
 export default {
+  mixins: [sound],
   data() {
     return {
       scene5Text: `Chang'e soon discovered her husband’s gift and began to devise a plan. That night, she found the elixir under their bed and drank every last drop. Realizing that his wife was not in bed with him, Hou Yi ran outside to find her drifting into the night sky.`,
@@ -41,5 +43,26 @@ export default {
   background: url(~/assets/images/mooncake_scene_5.jpeg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+.blink {
+  /* background-color: magenta; */
+  text-align: center;
+}
+span {
+  color: white;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

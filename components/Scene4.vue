@@ -64,7 +64,10 @@
 </template>
 
 <script>
+import sound from '../mixins/sound.js'
+
 export default {
+  mixins: [sound],
   data() {
     return {
       partType: 1,
@@ -98,5 +101,26 @@ export default {
   background: url(~/assets/images/mooncake_scene_4.jpeg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+.blink {
+  /* background-color: magenta; */
+  text-align: center;
+}
+span {
+  color: white;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
