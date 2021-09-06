@@ -21,7 +21,7 @@ export default {
         this.soundType = wrong2
       }
       const playPromise = new Audio(this.soundType)
-      playPromise.volume = 0.5
+      playPromise.volume = 0.1
       playPromise.play()
     },
   },
