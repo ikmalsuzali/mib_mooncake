@@ -10,7 +10,9 @@
     <div class="fixed bottom-0 w-full bg-opacity-70">
       <div class="container mx-auto px-5 lg:px-20 py-8">
         <div class="grid text-black">
-          <div class="text:sm md:text-xl mb-1">What happen then?</div>
+          <div class="text:sm md:text-xl mb-1">
+            What do you think happens next?
+          </div>
           <div class="flex">
             <button
               :class="animated1 ? 'shake bg-red-400' : 'bg-transparent'"
@@ -28,7 +30,9 @@
               "
               @click="onErrorClick1"
             >
-              <div class="m-auto">Hou Yi and Chang'E live happily</div>
+              <div class="m-auto">
+                Hou Yi & Chang’E lived happily ever after
+              </div>
             </button>
             <button
               :class="animated2 ? 'shake bg-red-400' : 'bg-transparent'"
@@ -46,7 +50,9 @@
               "
               @click="onErrorClick2"
             >
-              <div class="m-auto">Hou Yi decide to give Cheng'E the elixer</div>
+              <div class="m-auto">
+                Hou Yi decides to give Chang’E the elixir anyway
+              </div>
             </button>
             <button
               class="
@@ -63,7 +69,10 @@
               "
               @click="onNextClick"
             >
-              <div class="m-auto">Chang'E found it out and drank it</div>
+              <div class="m-auto">
+                Chang’E found the elixir underneath the bed and decides to drink
+                it
+              </div>
             </button>
           </div>
         </div>
@@ -80,7 +89,7 @@ export default {
   data() {
     return {
       partType: 1,
-      sceneTextPart1: `While Hou Yi was grateful for the gift, he felt conflicted. Xiwangmu had only given him enough elixir for one person, and he did not wish to be immortal if his wife could not live at his side for eternity. Ultimately, Hou Yi decided to remain mortal and hide the elixir under his bed`,
+      sceneTextPart1: `While Hou Yi was grateful for the gift, he was conflicted as the elixir he has is only enough for one person. Hou Yi did not wish to be immortal if he couldn’t spend eternity with his wife, Chang’E. Hou Yi took the elixir and hid in under his bed.`,
       animated1: false,
       animated2: false,
     }

@@ -21,7 +21,7 @@
       >
         <div class="grid text-black">
           <div class="flex-col">
-            <div>Hou Yi took the elixer and ...</div>
+            <div>What do you think Hou Yi did with the elixir?</div>
             <button
               :class="animated1 ? 'shake bg-red-400' : 'bg-transparent'"
               class="
@@ -39,7 +39,7 @@
               "
               @click="onErrorClick1"
             >
-              <div class="m-auto">Consume it</div>
+              <div class="m-auto">Consumed it</div>
             </button>
             <button
               :class="animated2 ? 'shake bg-red-400' : 'bg-transparent'"
@@ -58,7 +58,7 @@
               "
               @click="onErrorClick2"
             >
-              <div class="m-auto">Give it to Chang'E</div>
+              <div class="m-auto">Gave it to Chang'E</div>
             </button>
             <button
               class="
@@ -76,7 +76,7 @@
               "
               @click="onNextClick"
             >
-              <div class="m-auto">Hide it underneath his bed</div>
+              <div class="m-auto">Hid it underneath his bed</div>
             </button>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default {
   data() {
     return {
       partType: 1,
-      sceneTextPart1: `To reward him for his heroic deeds, the goddess Xiwangmu (西王母) gave him an elixir of immortality, a prize typically reserved for immortals who had achieved enlightenment.`,
+      sceneTextPart1: `Rewarding Hou Yi for his heroic deeds, a goddess by the name of Xiwangmu (西王母) gave him an elixir that grants a person immortality.Rewarding Hou Yi for his heroic deeds, a goddess by the name of Xiwangmu (西王母) gave him an elixir that grants a person immortality.`,
       animated1: false,
       animated2: false,
     }

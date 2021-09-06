@@ -29,9 +29,7 @@
               "
               @click="onErrorClick1"
             >
-              <div class="m-auto">
-                Go and see XiWangMu to get aonther elixir
-              </div>
+              <div class="m-auto">Asks for another elixir from XiWangMu</div>
             </button>
             <button
               class="
@@ -50,7 +48,7 @@
               @click="onNextClick"
             >
               <div class="m-auto">
-                Make Chang'E favourite dessert until the day he died
+                Made Chang E’s favourite dessert until the day he died.
               </div>
             </button>
             <button
@@ -70,7 +68,9 @@
               "
               @click="onErrorClick2"
             >
-              <div class="m-auto">Married another woman</div>
+              <div class="m-auto">
+                Married another woman & lived happily ever after.
+              </div>
             </button>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       partType: 1,
-      sceneTextPart1: `Hou Yi was so angry that he grabbed his bow and tried to shoot Chang’e down; he missed every shot. As time went by, Hou Yi’s anger subsided and he began to miss his wife. He would often stare up at the moon and think about how lonely Chang’e must be.`,
+      sceneTextPart1: `Hou Yi found out that his wife drank the elixir, as she seeks to flee from her life on earth. Hou Yi was furious and tried to shoot Chang’E down with his bow, but he missed every shot. Hou Yi’s life went on and as time passes, Hou Yi’s anger towards Chang’E fades and he starts missing his wife. Hou Yi would often stare up at the moon, thinking how lonely Chang’E must be.`,
       animated1: false,
       animated2: false,
     }
