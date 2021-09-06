@@ -39,7 +39,7 @@
 export default {
   data() {
     return {
-      scene2Text: `This tradition continues today, as many people leave annual offerings to Chang’e during the Mid-Autumn Festival.`,
+      scene2Text: `We hope that you’ve enjoyed this illustration of a Chinese myth about mooncake! As an F&B educator, we at MIB are extremely passionate about everything food: aesthetics, culture, significance & many more!`,
     }
   },
 }
