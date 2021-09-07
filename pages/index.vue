@@ -29,7 +29,7 @@
     </fade-transition>
     <img
       @click="onSoundClick"
-      class="z-auto ml-auto p-1 md:p-4 w-12"
+      class="z-auto ml-auto p-1 md:p-4 w-12 md:w-20"
       :src="
         isMute
           ? require('../assets/images/icons8-mute.png')
@@ -51,7 +51,7 @@ export default {
   mixins: [sound],
   data() {
     return {
-      sceneLevel: 9,
+      sceneLevel: 1,
       soundType: null,
       backgroundMusicPromise1: null,
       backgroundMusicPromise2: null,
