@@ -2,7 +2,7 @@
   <div class="overlay grid bg-picture">
     <div class="mx-auto lg:px-10 py-8">
       <div class="grid text-white">
-        <div class="text-xs sm:text-2xl p-4 bg-gray-200 bg-opacity-20">
+        <div class="text-md sm:text-2xl p-4 bg-gray-200 bg-opacity-20">
           {{ scene3TextPart1 }}
         </div>
       </div>
@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       partType: 1,
-      scene3TextPart1: `When the earth was still young, there were ten suns in the sky. It was extremely hot all the time and there was no such thing as night. The extreme heat made it hard to farm crops and endangered entire populations. One day, a skilled archer named Hou Yi (后羿) decided that enough was enough. He raised his bow to the heavens and shot down nine of the ten suns.`,
+      scene3TextPart1: `One day, something strange happened. Ten suns arose in the sky, blazing the earth. Hou Yi who was a skilled archer then stepped up. Raising his bow to the heavens, Hou Yi shot nine of the ten suns down, becoming an instant hero.`,
     }
   },
   methods: {},
@@ -51,11 +51,19 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_3.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_3.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
 
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_3.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
 .blink {
   /* background-color: magenta; */
   text-align: center;

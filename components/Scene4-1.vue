@@ -8,17 +8,7 @@
       </div>
     </div>
     <div class="fixed bottom-0 w-full bg-opacity-70">
-      <div
-        class="
-          container
-          mx-auto
-          px-5
-          lg:px-20
-          pb-8
-          bg-gray-200 bg-opacity-70
-          sm:bg-transparent
-        "
-      >
+      <div class="container mx-auto px-5 lg:px-20 pb-8 sm:bg-transparent">
         <div class="grid text-black">
           <div class="flex-col">
             <div>What do you think Hou Yi did with the elixir?</div>
@@ -100,20 +90,20 @@ export default {
   methods: {
     onErrorClick1() {
       this.animated1 = true
-      this.onPlay('wrong_1')
+      this.onPlay('wrong_2')
       setTimeout(() => {
         this.animated1 = false
       }, 1000)
     },
     onErrorClick2() {
       this.animated2 = true
-      this.onPlay('wrong_1')
+      this.onPlay('wrong_2')
       setTimeout(() => {
         this.animated2 = false
       }, 1000)
     },
     onNextClick() {
-      this.onPlay('right_1')
+      this.onPlay('right_2')
       this.$emit('next', 5)
     },
   },
@@ -122,9 +112,18 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_4.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_4.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_4.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .blink {

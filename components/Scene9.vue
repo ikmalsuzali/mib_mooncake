@@ -1,6 +1,13 @@
 <template>
   <div class="overlay grid bg-picture">
-    <div class="fixed bottom-0 w-full bg-opacity-50">
+    <div class="fixed w-full bg-opacity-50">
+      <div class="px-20 mx-auto lg:px-40 py-4 bg-gray-200 bg-opacity-60">
+        <div class="grid text-black">
+          <div class="text-md lg:text-2xl pb-4">
+            {{ scene2Text }}
+          </div>
+        </div>
+      </div>
       <button
         class="
           flex
@@ -21,16 +28,6 @@
           <span>Restart the story</span>
         </div>
       </button>
-      <div class="px-5 mx-auto lg:px-40 py-8 bg-gray-200 bg-opacity-40">
-        <div class="grid text-black">
-          <div class="text-md lg:text-2xl pb-4">
-            {{ scene2Text }}
-          </div>
-          <div class="text-xs ml-auto">
-            Disclaimer: This is just a myth, one of their versions
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -39,7 +36,7 @@
 export default {
   data() {
     return {
-      scene2Text: `We hope that you’ve enjoyed this illustration of a Chinese myth about mooncake! As an F&B educator, we at MIB are extremely passionate about everything food: aesthetics, culture, significance & many more!`,
+      scene2Text: `At MIB we have a passion for sharing everything we know about food. We hope you've enjoyed our first interactive story, please let us know what you think!`,
     }
   },
 }

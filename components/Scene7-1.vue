@@ -2,21 +2,24 @@
   <div class="overlay grid bg-picture">
     <div class="container mx-auto px-5 lg:px-10 py-8">
       <div class="grid text-white">
-        <div class="text-xs lg:text-2xl pb-4">
+        <div class="text-md lg:text-2xl pb-4">
           {{ sceneTextPart1 }}
         </div>
       </div>
     </div>
     <div class="fixed bottom-0 w-full bg-opacity-70">
       <div class="container mx-auto px-5 lg:px-20 py-8">
-        <div class="grid text-white">
+        <div class="grid text-black">
           <div class="flex-col">
-            <div>What does Hou Yi do then?</div>
+            <div class="bg-gray-200 bg-opacity-70 w-full md:w-5/12">
+              What does Hou Yi do then?
+            </div>
             <button
               :class="animated1 ? 'shake bg-red-400' : 'bg-transparent'"
               class="
-                my-2
-                w-5/12
+                mb-2
+                w-full
+                md:w-5/12
                 flex
                 text-sm
                 md:text-md
@@ -34,7 +37,8 @@
             <button
               class="
                 my-2
-                w-5/12
+                w-full
+                md:w-5/12
                 flex
                 text-sm
                 md:text-md
@@ -55,7 +59,8 @@
               :class="animated2 ? 'shake bg-red-400' : 'bg-transparent'"
               class="
                 my-2
-                w-5/12
+                w-full
+                md:w-5/12
                 flex
                 text-sm
                 md:text-md
@@ -116,9 +121,18 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_7.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_7.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_7.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .blink {

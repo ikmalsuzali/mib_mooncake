@@ -3,7 +3,14 @@
     <div class="fixed bottom-0 w-full bg-opacity-50">
       <div class="container mx-auto px-5 lg:px-40 py-8">
         <div class="grid text-white">
-          <div class="m-auto text-4xl md:text-8xl mb-8">Chang'E Myth</div>
+          <div class="m-auto text-2xl md:text-5xl text-center mb-4 md:mb-8">
+            The Origins of Mooncakes: Legend of Chang'E (嫦娥)
+            <div class="text-xs">
+              *this story is passed downn for generations, this is our version
+              of the story
+            </div>
+          </div>
+
           <button
             class="
               flex
@@ -44,9 +51,18 @@ export default {}
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_2.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_2.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_2.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .blink {

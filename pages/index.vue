@@ -27,6 +27,15 @@
     <fade-transition :duration="2000">
       <Scene9 v-if="sceneLevel === 9" @next="onNext" />
     </fade-transition>
+    <img
+      @click="onSoundClick"
+      class="z-auto ml-auto p-1 md:p-4 w-12"
+      :src="
+        isMute
+          ? require('../assets/images/icons8-mute.png')
+          : require('../assets/images/icons8-sound.png')
+      "
+    />
     <audio id="player" ref="player" autoplay allow="autoplay" loop>
       <source :src="bgSound1" type="audio/mp3" />
     </audio>
@@ -42,10 +51,11 @@ export default {
   mixins: [sound],
   data() {
     return {
-      sceneLevel: 1,
+      sceneLevel: 9,
       soundType: null,
       backgroundMusicPromise1: null,
       backgroundMusicPromise2: null,
+      isMute: false,
       bgSound1,
       bgSound2,
     }
@@ -54,6 +64,7 @@ export default {
     sceneLevel(newValue) {
       if (newValue === 1) {
         this.$refs.player.src = bgSound1
+        this.$refs.player.volume = 0.5
         const promise = this.$refs.player.play()
         if (promise !== undefined) {
           promise
@@ -66,6 +77,7 @@ export default {
         }
       } else if (newValue === 6) {
         this.$refs.player.src = bgSound2
+        this.$refs.player.volume = 0.5
         this.$refs.player.play()
       }
     },
@@ -76,6 +88,7 @@ export default {
       if (promise !== undefined) {
         promise
           .then(() => {
+            this.$refs.player.volume = 0.5
             this.$refs.player.play()
           })
           .catch((error) => {
@@ -89,7 +102,12 @@ export default {
       this.sceneLevel = event
     },
     onClick() {
+      this.$refs.player.volume = 0.5
       this.$refs.player.play()
+    },
+    onSoundClick() {
+      this.isMute = !this.isMute
+      this.$refs.player.muted = this.isMute
     },
   },
 }

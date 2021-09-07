@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       partType: 1,
-      scene3TextPart1: `In the hopes that it might make Chang’e feel less alone (and to show that he was no longer mad at her), Hou Yi started leaving her favorite desserts and fruits out every night. He continued this practice until the day he died.`,
+      scene3TextPart1: `In the hopes that it might make Chang’E feel less alone (and to show that he was no longer mad at her), Hou Yi started making her favorite desserts and leaving it out at night. He continued this practice until the day he died. Fast forward to this day, the tradition continues, where many people leave annual offerings of Mooncakes to Chang'E during the Mid-Autumn Festival.`,
     }
   },
   methods: {},
@@ -51,9 +51,18 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_8.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_8.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_8.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .blink {

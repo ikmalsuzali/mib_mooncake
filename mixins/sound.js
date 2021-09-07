@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       soundType: null,
+      playPromise: null,
     }
   },
   methods: {
@@ -20,9 +21,9 @@ export default {
       } else if (type === 'wrong_2') {
         this.soundType = wrong2
       }
-      const playPromise = new Audio(this.soundType)
-      playPromise.volume = 0.1
-      playPromise.play()
+      this.playPromise = new Audio(this.soundType)
+      this.playPromise.volume = 0.4
+      this.playPromise.play()
     },
   },
 }

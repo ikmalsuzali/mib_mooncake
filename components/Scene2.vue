@@ -3,7 +3,7 @@
     <div class="fixed bottom-0 w-full bg-opacity-50">
       <div class="container mx-auto px-5 lg:px-40 py-8">
         <div class="grid text-white">
-          <div class="text-xl lg:text-2xl pb-4">
+          <div class="text-sm lg:text-2xl pb-4">
             {{ scene2Text }}
           </div>
           <button
@@ -35,10 +35,7 @@
 export default {
   data() {
     return {
-      scene2Text: `Long long time ago, Chang’E and Hou Yi fall in love and get married.
-            Then, Chang’E live with Hou Yi with his family. Chang’E found out
-            that Hou Yi live a poor life that is totally different from her. She
-            wanted to go back home…`,
+      scene2Text: `A long time ago Chang'E (嫦娥), a beautiful young girl who worked for the Jade Emperor in heaven, was banished to live on earth. There, Chang'E met a young hunter named Hou Yi (后羿) and fell in love. Chang'E who lived a prosperous life discovered that Hou Yi was poor. Despite her love for Hou Yi, she wanted to go back to heaven...`,
     }
   },
 }
@@ -46,9 +43,18 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_2.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_2.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_2.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .blink {

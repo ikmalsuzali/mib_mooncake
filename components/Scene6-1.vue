@@ -2,7 +2,7 @@
   <div class="overlay grid bg-picture">
     <div class="container mx-auto px-5 lg:px-10 py-8">
       <div class="grid text-white">
-        <div class="text-xs md:text-2xl pb-4">
+        <div class="text-md md:text-2xl pb-4">
           {{ scene3TextPart1 }}
         </div>
       </div>
@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       partType: 1,
-      scene3TextPart1: `Chang’e soon discovered her husband’s gift and began to devise a plan. That night, she found the elixir under their bed and drank every last drop. Realizing that his wife was not in bed with him, Hou Yi ran outside to find her drifting into the night sky.`,
+      scene3TextPart1: `Chang'E soon discovered about her husband's gift and began scheming her plan to go back to heaven. One night, she found the elixir hidden under their bed. Chang'E then drank every last drop of the elixir. Hou Yi, realizing that his wife was nowhere to be found ran outside to find Chang'E drifting into the night sky.`,
     }
   },
   methods: {},
@@ -51,11 +51,19 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_6.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_6.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
 
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_6.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
 .blink {
   /* background-color: magenta; */
   text-align: center;

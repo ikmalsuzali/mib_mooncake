@@ -2,7 +2,7 @@
   <div class="overlay grid bg-picture">
     <div class="container mx-auto px-5 lg:px-10 py-8">
       <div class="grid text-black">
-        <div class="text-xs lg:text-2xl pb-4">
+        <div class="text-md lg:text-2xl pb-4">
           {{ sceneTextPart1 }}
         </div>
       </div>
@@ -119,9 +119,18 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_5.jpeg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_5.jpg) no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-picture {
+    background: url(~/assets/images/mooncake_scene_5.jpeg) no-repeat center
+      center;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
 
 .blink {
