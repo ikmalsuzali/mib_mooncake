@@ -6,8 +6,8 @@
           <div class="m-auto text-2xl md:text-5xl text-center mb-4 md:mb-8">
             The Origins of Mooncakes: Legend of Chang'E (嫦娥)
             <div class="text-xs">
-              *this story is passed downn for generations, this is our version
-              of the story
+              *this story is passed down for generations, this is our version of
+              the story
             </div>
           </div>
 
