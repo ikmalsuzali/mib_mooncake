@@ -82,7 +82,7 @@ export default {
   data() {
     return {
       partType: 1,
-      sceneTextPart1: `Rewarding Hou Yi for his heroic deeds, a goddess by the name of Xiwangmu (西王母) gave him an elixir that grants a person immortality.Rewarding Hou Yi for his heroic deeds, a goddess by the name of Xiwangmu (西王母) gave him an elixir that grants a person immortality.`,
+      sceneTextPart1: `Rewarding Hou Yi for his heroic deeds, a goddess by the name of Xiwangmu (西王母) gave him an elixir that grants a person immortality.`,
       animated1: false,
       animated2: false,
     }
