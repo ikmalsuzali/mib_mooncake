@@ -51,14 +51,14 @@ export default {
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/mobiles/mooncake_scene_8.jpg) no-repeat center center;
+  background: url(~/assets/mobiles/mooncake_scene_8.gif) no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
 
 @media only screen and (min-width: 600px) {
   .bg-picture {
-    background: url(~/assets/images/mooncake_scene_8.jpeg) no-repeat center
+    background: url(~/assets/images/mooncake_scene_8.gif) no-repeat center
       center;
     background-size: cover;
     overflow: hidden;
