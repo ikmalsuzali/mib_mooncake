@@ -1,12 +1,13 @@
 <template>
   <div class="overlay grid bg-picture">
     <div class="fixed w-full bg-opacity-50">
-      <div class="px-20 mx-auto md:px-80 py-4 bg-gray-200 bg-opacity-60">
-        <div class="grid text-black">
-          <div class="text-md text-center lg:text-2xl pb-4">
+      <div class="px-20 mx-auto my-10 md:px-80 py-4 bg-gray-200 bg-opacity-60">
+        <div class="flex text-black">
+          <div class="w-6/12 text-md text-center lg:text-2xl pb-4">
             {{ scene2Text }}
           </div>
           <img
+            @click="onClickInstagram"
             src="../assets/images/instagram_ic.png"
             class="w-20 m-auto hover:shadow-2xl"
           />
@@ -51,6 +52,9 @@ export default {
   methods: {
     onClickImg() {
       window.location.href = 'https://www.mib.edu.my/mooncake-2021/'
+    },
+    onClickInstagram() {
+      window.location.href = 'https://www.instagram.com/mibcollege/'
     },
   },
 }

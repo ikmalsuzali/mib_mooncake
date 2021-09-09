@@ -1,4 +1,7 @@
 export default {
+  router: {
+    base: '/mooncake-2021/chang-er-story/',
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
