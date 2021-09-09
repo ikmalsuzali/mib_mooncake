@@ -11,19 +11,22 @@
       <div class="container mx-auto px-5 lg:px-20 pb-8 sm:bg-transparent">
         <div class="grid text-black">
           <div class="flex-col">
-            <div>What do you think Hou Yi did with the elixir?</div>
+            <div class="bg-gray-200 bg-opacity-70 w-full md:w-5/12">
+              What do you think Hou Yi did with the elixir?
+            </div>
             <button
               :class="animated1 ? 'shake bg-red-400' : 'bg-transparent'"
               class="
-                my-2
+                mb-2
                 w-full
-                sm:w-5/12
+                md:w-5/12
                 flex
-                text-xs
+                text-sm
                 md:text-md
                 font-bold
                 border-2 border-white
                 active:bg-red-400
+                bg-white
                 p-3
                 text-black
               "
@@ -34,15 +37,16 @@
             <button
               :class="animated2 ? 'shake bg-red-400' : 'bg-transparent'"
               class="
-                my-2
+                mb-2
                 w-full
-                sm:w-5/12
+                md:w-5/12
                 flex
-                text-xs
+                text-sm
                 md:text-md
                 font-bold
                 border-2 border-white
                 active:bg-red-400
+                bg-white
                 p-3
                 text-black
               "
@@ -54,13 +58,14 @@
               class="
                 my-2
                 w-full
-                sm:w-5/12
+                md:w-5/12
                 flex
-                text-xs
+                text-sm
                 md:text-md
                 font-bold
                 border-2 border-white
                 active:bg-green-400
+                bg-white
                 p-3
                 text-black
               "

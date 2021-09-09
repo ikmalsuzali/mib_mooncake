@@ -1,27 +1,62 @@
 <template>
   <div class="overlay grid bg-picture">
     <div class="fixed w-full bg-opacity-50">
-      <div class="px-20 mx-auto my-10 md:px-80 py-4 bg-gray-200 bg-opacity-60">
-        <div class="flex text-black">
-          <div class="w-6/12 text-md text-center lg:text-2xl pb-4">
-            {{ scene2Text }}
-          </div>
+      <div
+        class="
+          px-10
+          mx-auto
+          my-5
+          md:px-80
+          py-4
+          bg-gray-200 bg-opacity-60
+          flex-wrap flex
+          text-black
+        "
+      >
+        <div class="w-full lg:w-8/12 text-md text-center lg:text-2xl pb-4">
+          {{ scene2Text }}
+        </div>
+        <div class="w-full lg:w-2/12 hidden lg:block">
+          <img
+            src="../assets/images/arrow_ic.png"
+            class="mt-4 w-10 lg:w-15 m-auto hover:shadow-2xl"
+          />
+        </div>
+        <div class="w-full lg:w-2/12">
           <img
             @click="onClickInstagram"
             src="../assets/images/instagram_ic.png"
-            class="w-20 m-auto hover:shadow-2xl"
+            class="w-10 lg:w-20 m-auto lg:mr-auto hover:shadow-2xl"
           />
         </div>
       </div>
-      <img
-        @click="onClickImg"
-        src="../assets/images/mooncake_scene_9.png"
-        class="w-5/12 m-auto hover:shadow-2xl"
-      />
+      <div class="m-auto relative w-full sm:w-4/12">
+        <img
+          @click="onClickImg"
+          src="../assets/images/mooncake_scene_9.png"
+          class="m-auto hover:shadow-2xl"
+        />
+        <div class="bottom-0 absolute w-full">
+          <div class="text-center bg-gray-200 bg-opacity-70">
+            <div>Click here checkout our Mooncakes!</div>
+          </div>
+          <div class="text-center">
+            <button
+              class="bg-yellow-500 hover:bg-yellow-400 p-2 text-white w-full"
+            >
+              <div>
+                <span> Purchase Mooncakes </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-0 w-full">
       <button
         class="
           flex
-          m-auto
+          ml-auto
           text-sm
           md:text-md
           font-bold
@@ -31,6 +66,7 @@
           rounded-xl
           text-black
           my-4
+          mx-4
         "
         @click="$emit('next', 1)"
       >
