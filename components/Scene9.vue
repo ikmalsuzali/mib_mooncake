@@ -51,10 +51,10 @@ export default {
   },
   methods: {
     onClickImg() {
-      window.location.href = 'https://www.mib.edu.my/mooncake-2021/'
+      window.open('https://www.mib.edu.my/mooncake-2021/', '_blank')
     },
     onClickInstagram() {
-      window.location.href = 'https://www.instagram.com/mibcollege/'
+      window.open('https://www.instagram.com/mibcollege/', '_blank')
     },
   },
 }
