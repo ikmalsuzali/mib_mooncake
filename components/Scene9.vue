@@ -1,13 +1,22 @@
 <template>
   <div class="overlay grid bg-picture">
     <div class="fixed w-full bg-opacity-50">
-      <div class="px-20 mx-auto lg:px-40 py-4 bg-gray-200 bg-opacity-60">
+      <div class="px-20 mx-auto md:px-80 py-4 bg-gray-200 bg-opacity-60">
         <div class="grid text-black">
-          <div class="text-md lg:text-2xl pb-4">
+          <div class="text-md text-center lg:text-2xl pb-4">
             {{ scene2Text }}
           </div>
+          <img
+            src="../assets/images/instagram_ic.png"
+            class="w-20 m-auto hover:shadow-2xl"
+          />
         </div>
       </div>
+      <img
+        @click="onClickImg"
+        src="../assets/images/mooncake_scene_9.png"
+        class="w-5/12 m-auto hover:shadow-2xl"
+      />
       <button
         class="
           flex
@@ -20,7 +29,7 @@
           p-3
           rounded-xl
           text-black
-          mb-4
+          my-4
         "
         @click="$emit('next', 1)"
       >
@@ -39,12 +48,17 @@ export default {
       scene2Text: `At MIB we have a passion for sharing everything we know about food. We hope you've enjoyed our first interactive story, please let us know what you think!`,
     }
   },
+  methods: {
+    onClickImg() {
+      window.location.href = 'https://www.mib.edu.my/mooncake-2021/'
+    },
+  },
 }
 </script>
 
 <style scoped>
 .bg-picture {
-  background: url(~/assets/images/mooncake_scene_9.png) no-repeat center center;
+  background-color: #eeeeee;
   background-size: cover;
   overflow: hidden;
 }
