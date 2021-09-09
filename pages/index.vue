@@ -51,7 +51,7 @@ export default {
   mixins: [sound],
   data() {
     return {
-      sceneLevel: 9,
+      sceneLevel: 1,
       soundType: null,
       backgroundMusicPromise1: null,
       backgroundMusicPromise2: null,
