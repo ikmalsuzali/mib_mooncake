@@ -42,6 +42,7 @@
           </div>
           <div class="text-center">
             <button
+              @click="onClickImg"
               class="bg-yellow-500 hover:bg-yellow-400 p-2 text-white w-full"
             >
               <div>
