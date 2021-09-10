@@ -91,7 +91,10 @@ export default {
       window.open('https://www.mib.edu.my/mooncake-2021/', '_blank')
     },
     onClickInstagram() {
-      window.open('https://www.instagram.com/mibcollege/', '_blank')
+      window.open(
+        'https://www.instagram.com/p/CTn3X2qpLuM/?utm_medium=copy_link',
+        '_blank'
+      )
     },
   },
 }
